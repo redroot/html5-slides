@@ -13,7 +13,7 @@
 
 <html>
   <head>
-    <title>Responsive Grid System with Sass</title>
+    <title>Responsive Grid Systems with Sass</title>
 
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <script type="text/javascript" src="./javascripts/slides.js"></script>
@@ -40,14 +40,15 @@
 
       <article id="responsivestyles">
         <h3>
-          Responsive Styles
+          Responsive Design
         </h3>
-        <p>
-          Browser screenshots here, maybe my design
-        </p>
-        <p>
-          <a href="http://foodsense.is/">Food Sense</a>, <a href="http://www.madebysplendid.com/">Made By Splendid</a>, <a href="http://www.dolectures.com/">Do Lectures</a>
-        </p>
+          <p>
+             <a href="http://red-root.com/cv/" target="_blank"><img src="images/mycvresponsive.jpg" /></a>
+          </p>
+          <p>
+            Other examples:<br/>
+            <a href="http://foodsense.is/" target="_blank">Food Sense</a>, <a href="http://www.madebysplendid.com/" traget="_blank">Made By Splendid</a>, <a href="http://www.dolectures.com/" target="_blank">Do Lectures</a>
+          </p>
       </article>
 
       <article id="responsivegrids">
@@ -55,10 +56,10 @@
           Responsive Grid Systems
         </h3>
         <p>
-          Show examples of layout with an without grids and then a link to 960.gs, numer of different layouts. Dicuss column width and gutter widtj. E.g in a 960s grid, each column in 12 = 60px, 44 in 16 columns or whatever
+          Show examples of layout with an without grids and then a link to 960.gs, numer of different layouts. Discuss advantages of using grid system. Proven effective ratios, improves readabilit and allows you to align content affectivelly. <br/>Dicuss column width and gutter widtj. E.g in a 960s grid, each column in 12 = 60px, 44 in 16 columns or whatever
         </p>
         <p>
-          There is more text just underneath with a <code>code sample: 5px</code>.
+          Show examples of Forwardtechnology, hopeage and event page with overlay, then show another site with more columns from 960.gs.
         </p>
       </article>
 
@@ -80,32 +81,25 @@
 						</pre>
 
 				</section>
+			
       </article>
 
-			<article id="tradcss" class="smaller">
+			<article id="tradcss" >
 				<h3>Traditional CSS (.grid-4)</h3>
 				<section>
 						<pre>
-.grid-4 {
-	width: 380px; # 1180px and above
-}
+.grid-4 { width: 380px; }
 
 @media only screen and (min-width: 960px) and (max-width: 1179px) {
-	grid.4 {
-		width: 300px
-	}
+	grid.4 { width: 300px; }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-	.grid-4 {
-		width: 172px;
-	}
+	.grid-4 { width: 172px; }
 }
 
 @media only screen and (max-width: 767px) {
-	.grid-4 {
-		width: auto
-	}
+	.grid-4 { width: auto; }
 }
 						</pre>
 				</section>
@@ -118,7 +112,7 @@
         </h3>
 
         <div class="build">
-          <p>Small intro to Sass, preprocessor for CSS, can we use this to make the process cleaner</p>
+          <p>Pre-processor for CSS</p>
           <p>More semantic markup, truly move presentational information into the layout</p>
         </div>
       </article>
@@ -202,6 +196,11 @@ $columns-count: 12
 			<li>IE | 
 				<a href="https://github.com/scottjehl/Respond">Respond.js</a>
 			</li>
+			<li>Responsive Fix Mobile Safari:
+				<pre>
+&lt;meta content='width=device-width, initial-scale=1, maximum-scale=1' 
+name='viewport' /&gt;
+</pre></li>
 			<li>Large filesize due to styles for various resolutions | <a href="http://adapt.960.gs/">Adapt.js</a>
 			<li>Possible large filesize due to high volume of <strong>@columns</strong> usage</li>
 		</ul>
