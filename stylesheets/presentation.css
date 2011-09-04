@@ -1,0 +1,45 @@
+/* Styles for this specific presentation */
+
+@-webkit-keyframes cogspin {
+  0% {
+    left: 1000px;
+    opacity: 0;
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    left: -50px;
+    opacity: .9;
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#the-cog {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  z-index: 1;
+  opacity: .9;
+  -webkit-animation-name: cogspin;
+  -webkit-animation-duration: 2.6s; 
+  -webkit-animation-iteration-count: once;
+  -webkit-animation-timing-function: ease-out;
+}
+
+
+h1 {
+  z-index: 10;
+    opacity: 1;
+  position: relative;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.half {
+  width: 350px;
+}
