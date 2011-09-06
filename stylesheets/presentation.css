@@ -32,6 +32,10 @@ h1 {
   position: relative;
 }
 
+h3.bump {
+  margin-bottom: 30px;
+}
+
 .left {
   float: left;
 }
@@ -42,4 +46,10 @@ h1 {
 
 .half {
   width: 350px;
+}
+
+a.imgbuild {
+  display:block;
+  position: absolute;
+  top: 100px;
 }
